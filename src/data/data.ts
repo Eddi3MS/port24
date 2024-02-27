@@ -1,7 +1,11 @@
+import havenIMG from '@/assets/projects/haven.png'
+import deliverizeIMG from '@/assets/projects/deliverize.png'
+import numbersIMG from '@/assets/projects/number.png'
+
 export const projects = [
   {
     id: '08',
-    image: '/projects/haven.png',
+    image: havenIMG.src,
     title: 'Haven - Imóveis SA',
     tech: [
       'Next.js',
@@ -21,7 +25,7 @@ export const projects = [
   },
   {
     id: '07',
-    image: '/projects/deliverize.png',
+    image: deliverizeIMG.src,
     title: 'Deliveryze',
     tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
     desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um layout no figma e uma api, deveria replicar a tela e consegui os dados da api para povoar a tela. Consegui entregar um bom resultado e fui contratado.',
@@ -29,7 +33,7 @@ export const projects = [
   },
   {
     id: '02',
-    image: '/projects/number.png',
+    image: numbersIMG.src,
     title: 'Adivinhe o Número',
     tech: ['Javascript', 'Manipulação da DOM', 'Rest API'],
     desc: 'Teste de habilidades básicas para uma vaga de desenvolvedor web. Nunca recebi feedback, mas foi meu primeiro teste, onde pude aprender e executar requisições http (para receber o número), e também manipular a DOM sem utilizar nenhum framework para exibir os números e feedbacks visuais ao usuário.',
