@@ -25,11 +25,11 @@ const Projects = () => {
             <p className="max-w-prose text-sm text-zinc-700">{project.desc}</p>
 
             <a
-              href={project.git}
+              href={project.live}
               target="_blank"
               className="mt-auto ml-auto text-sky-800 font-bold underline"
             >
-              ver o código
+              ver online
             </a>
           </div>
         </div>
