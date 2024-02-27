@@ -24,13 +24,25 @@ const Projects = () => {
             <BadgeList words={project.tech} size="xs" />
             <p className="max-w-prose text-sm text-zinc-700">{project.desc}</p>
 
-            <a
-              href={project.live}
-              target="_blank"
-              className="mt-auto ml-auto text-sky-800 font-bold underline"
-            >
-              ver online
-            </a>
+            {project?.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                className="mt-auto ml-auto text-sky-800 font-bold underline"
+              >
+                ver online
+              </a>
+            )}
+
+            {project?.git && (
+              <a
+                href={project.git}
+                target="_blank"
+                className="mt-auto ml-auto text-sky-800 font-bold underline"
+              >
+                ver código
+              </a>
+            )}
           </div>
         </div>
       ))}

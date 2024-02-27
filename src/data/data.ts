@@ -21,7 +21,7 @@ export const projects = [
      e suas mais recentes features, NextAuth para autenticação e
       autorização, Resend e React-Emails, Shadcn-UI, Neon DB, Prisma e Cloudinary.",
     `,
-    live: '',
+    git: 'https://github.com/Eddi3MS/haven',
   },
   {
     id: '07',
