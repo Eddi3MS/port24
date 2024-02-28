@@ -14,11 +14,10 @@ const Experience = () => {
         </h3>
         <p className="text-[clamp(0.875rem,0.7639rem+0.5556vi,1.125rem)">
           Como desenvolvedor frontend na teamsoft, minhas responsabilidades
-          abrangiam desde a participação de reuniões diárias para discutir o
-          progresso e metas para a sprint, passando pelo desenvolvimento de todo
-          o código frontend e testes funcionais para garantir a qualidade e
-          resiliência da aplicação, até a configuração e deploy da aplicação em
-          diferentes ambientes.
+          abrangiam desde o desenvolvimento da interface, lógica de interações e
+          integrações, testes funcionais, até a configuração e deploy da
+          aplicação. Além disso, participação de reuniões diárias e semanais
+          para discutir o progresso e metas para a sprint (SCRUM).
         </p>
         <div className="grid gap-2">
           <h4 className="text-base font-semibold text-zinc-900">
