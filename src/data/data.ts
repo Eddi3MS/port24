@@ -28,7 +28,7 @@ export const projects = [
     image: deliverizeIMG.src,
     title: 'Deliveryze',
     tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
-    desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um layout no figma e uma api, deveria replicar a tela e consegui os dados da api para povoar a tela. Consegui entregar um bom resultado e fui contratado.',
+    desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um design no figma e uma api, deveria replicar a tela e consumir os dados da api para povoar as informações da tela.',
     live: 'https://www.deliveryze.edsonmarcelo.com.br',
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     image: numbersIMG.src,
     title: 'Adivinhe o Número',
     tech: ['Javascript', 'Manipulação da DOM', 'Rest API'],
-    desc: 'Teste de habilidades básicas para uma vaga de desenvolvedor web. Nunca recebi feedback, mas foi meu primeiro teste, onde pude aprender e executar requisições http (para receber o número), e também manipular a DOM sem utilizar nenhum framework para exibir os números e feedbacks visuais ao usuário.',
+    desc: 'Teste de habilidades básicas para uma vaga de desenvolvedor web, onde pude aprender e executar requisições http (para receber o número), e também manipular a DOM sem utilizar nenhum framework para exibir os números e feedbacks visuais ao usuário.',
     live: 'https://guess1to300.netlify.app/',
   },
 ]
