@@ -31,7 +31,7 @@ const Experience = () => {
         <h3 className="text-[clamp(1rem,0.7778rem+1.1111vi,1.5rem)] font-bold text-zinc-900 flex gap-8  justify-between">
           Vendedor
           <span className="text-sm text-sky-900 font-bold min-w-max">
-            01/2008 à 12/2022
+            01/2008 à 12/2021
           </span>
         </h3>
         <p className="text-[clamp(0.875rem,0.7639rem+0.5556vi,1.125rem)">
