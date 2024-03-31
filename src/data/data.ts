@@ -19,7 +19,7 @@ export const projects = [
     ],
     desc: `Este é um Sistema autoral desenvolvido com Next14,
      e suas mais recentes features, NextAuth para autenticação e
-      autorização, Resend e React-Emails, Shadcn-UI, Neon DB, Prisma e Cloudinary.",
+      autorização, Resend e React-Emails, Shadcn-UI, Neon DB, Prisma e Cloudinary.
     `,
     git: 'https://github.com/Eddi3MS/haven',
   },
