@@ -1,6 +1,7 @@
 import havenIMG from '@/assets/projects/haven.png'
 import deliverizeIMG from '@/assets/projects/deliverize.png'
 import numbersIMG from '@/assets/projects/number.png'
+import BlogIMG from '@/assets/projects/blog.png'
 
 export const projects = [
   {
@@ -25,6 +26,15 @@ export const projects = [
   },
   {
     id: '07',
+    image: BlogIMG.src,
+    title: 'CodeLeap Network',
+    tech: ['React.Js', 'React Hooks', 'Redux Toolkit', 'Radix UI', 'Axios'],
+    desc: `Teste aplicado pela Codeleap, onde provido de uma api, pude implementar 
+    um sistema de posts, com criação, edição, deleção e listagem (CRUD).`,
+    live: 'https://www.codeleap.edsonmarcelo.com.br/',
+  },
+  {
+    id: '107',
     image: deliverizeIMG.src,
     title: 'Deliveryze',
     tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
