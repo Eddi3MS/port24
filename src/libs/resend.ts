@@ -4,13 +4,25 @@ import { contactSchema, type ContactSchema } from '@/schemas/contactSchema'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-export const sendMessage = async (data: ContactSchema) => {
+type SendMessageReturn =
+  | {
+      message: string
+      error: true
+    }
+  | {
+      message: string
+      success: true
+    }
+
+export const sendMessage = async (
+  data: ContactSchema
+): Promise<SendMessageReturn> => {
   let parse = contactSchema.safeParse(data)
 
   if (!parse.success) {
     return {
       message: 'Formato dos dados inválidos. Tente novamente!',
-      success: false,
+      error: true,
     }
   }
 
@@ -28,7 +40,7 @@ export const sendMessage = async (data: ContactSchema) => {
   } catch (e) {
     return {
       message: 'Falha ao enviar a mensagem. Tente novamente mais tarde!',
-      success: false,
+      error: true,
     }
   }
 }

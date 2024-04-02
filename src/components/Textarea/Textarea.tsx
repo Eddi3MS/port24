@@ -13,7 +13,7 @@ const Textarea = (
   return (
     <div className="relative">
       <label className="grid gap-1">
-        {label}
+        <span className={error && 'text-red-500'}>{label}</span>
         <textarea
           ref={ref}
           placeholder=" "

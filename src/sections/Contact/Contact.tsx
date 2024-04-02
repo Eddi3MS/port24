@@ -1,7 +1,6 @@
 'use client'
 
-import { Button, Input, Section, Socials, Textarea } from '@/components'
-import { useModal } from '@/hooks'
+import { Button, Input, Modal, Section, Socials, Textarea } from '@/components'
 import { sendMessage } from '@/libs/resend'
 import { contactSchema, type ContactSchema } from '@/schemas/contactSchema'
 import { formatPhoneNumber } from '@/utils/formatPhoneNumber'
@@ -9,17 +8,17 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { ChangeEvent, useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
-export type FormState =
-  | { message: string; error: boolean }
-  | { message: string; success: boolean }
-  | null
+const initFeedback = {
+  title: '',
+  message: '',
+}
 
 const Contact = () => {
-  const { Modal, openModal, closeModal } = useModal()
-  const [feedback, setFeedback] = useState({
-    title: '',
-    message: '',
-  })
+  const [feedback, setFeedback] = useState(initFeedback)
+
+  const clearFeedback = () => {
+    setFeedback(initFeedback)
+  }
 
   const {
     handleSubmit,
@@ -39,14 +38,15 @@ const Contact = () => {
 
   const submitMessage = async (data: ContactSchema) => {
     try {
-      const { success, message } = await sendMessage(data)
+      const response = await sendMessage(data)
 
+      const isSuccess = 'success' in response
       setFeedback({
-        title: !success ? 'Algo deu errado!' : 'Sucesso!!',
-        message,
+        title: isSuccess ? 'Sucesso!!' : 'Algo deu errado!',
+        message: response.message,
       })
 
-      if (success) {
+      if (isSuccess) {
         reset()
       }
     } catch (error) {
@@ -55,8 +55,6 @@ const Contact = () => {
         message:
           'Não foi possível se conectar ao servidor. Verifique sua internet e tente novamente.',
       })
-    } finally {
-      openModal()
     }
   }
 
@@ -97,18 +95,21 @@ const Contact = () => {
         />
 
         <Button className="mt-5" disabled={isSubmitting}>
-          enviar
+          {isSubmitting ? 'enviando..' : 'enviar'}
         </Button>
       </form>
+
       <Socials className="justify-center py-5" />
-      <Modal title={feedback.title}>
-        <div className="px-2 py-2 flex flex-col justify-between flex-1">
-          <div className="flex-1 flex p-8 items-center justify-center">
-            <span className="max-w-xs text-center">{feedback.message}</span>
+      {!!feedback.title && (
+        <Modal title={feedback.title} closeModal={clearFeedback}>
+          <div className="px-2 py-2 flex flex-col justify-between flex-1">
+            <div className="flex-1 flex p-8 items-center justify-center">
+              <span className="max-w-xs text-center">{feedback.message}</span>
+            </div>
+            <Button onClick={clearFeedback}>OK</Button>
           </div>
-          <Button onClick={closeModal}>OK</Button>
-        </div>
-      </Modal>
+        </Modal>
+      )}
     </Section>
   )
 }
