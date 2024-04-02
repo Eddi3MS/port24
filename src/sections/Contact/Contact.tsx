@@ -5,6 +5,7 @@ import { sendMessage } from '@/libs/resend'
 import { contactSchema, type ContactSchema } from '@/schemas/contactSchema'
 import { formatPhoneNumber } from '@/utils/formatPhoneNumber'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { AnimatePresence } from 'framer-motion'
 import { ChangeEvent, useState } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 
@@ -100,16 +101,18 @@ const Contact = () => {
       </form>
 
       <Socials className="justify-center py-5" />
-      {!!feedback.title && (
-        <Modal title={feedback.title} closeModal={clearFeedback}>
-          <div className="px-2 py-2 flex flex-col justify-between flex-1">
-            <div className="flex-1 flex p-8 items-center justify-center">
-              <span className="max-w-xs text-center">{feedback.message}</span>
+      <AnimatePresence>
+        {!!feedback.title && (
+          <Modal title={feedback.title} closeModal={clearFeedback}>
+            <div className="px-2 py-2 flex flex-col justify-between flex-1">
+              <div className="flex-1 flex p-8 items-center justify-center">
+                <span className="max-w-xs text-center">{feedback.message}</span>
+              </div>
+              <Button onClick={clearFeedback}>OK</Button>
             </div>
-            <Button onClick={clearFeedback}>OK</Button>
-          </div>
-        </Modal>
-      )}
+          </Modal>
+        )}
+      </AnimatePresence>
     </Section>
   )
 }

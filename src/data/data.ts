@@ -54,21 +54,20 @@ export const projects = [
 export const ts_techs = [
   'react',
   'next.js',
-  'git',
   'react hooks',
   'typescript',
+  'redux',
   'zod',
+  'context api',
+  'react query',
   'yup',
   'react-hook-forms',
+  'git',
   'styled-components',
   'sass',
   'react-bootstrap',
   'storybook',
   'radix ui',
-  'wagmi',
-  'redux',
-  'context api',
-  'react query',
 ]
 
 export const es_certificates = [
