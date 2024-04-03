@@ -7,7 +7,7 @@ const Header = () => {
       <Link href="#experience">
         <AnimatedSpan>Experiência</AnimatedSpan>
       </Link>
-      <Link href="#certificados">
+      <Link href="#certificates">
         <AnimatedSpan>Certificados</AnimatedSpan>
       </Link>
       <Link href="#projects">
