@@ -9,10 +9,12 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 grid gap-8">
           <Hero />
           <Experience />
-          <Certificates />
-          <Projects />
-          <Contact />
         </div>
+        <Certificates />
+        <div className="max-w-5xl mx-auto px-4 grid gap-8">
+          <Projects />
+        </div>
+        <Contact />
       </main>
       <Footer />
     </>

@@ -23,7 +23,7 @@ function ExperienceCard({
 
   return (
     <motion.div
-      className="grid gap-3 border-b-[1px] border-zinc-200 pb-8"
+      className="grid gap-3 pb-8"
       ref={ref}
       animate={{ scale: isInView ? 1 : 0.7 }}
     >
