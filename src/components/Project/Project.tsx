@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
 import { BadgeList } from '..'
+import AnimatedSpan from '../AnimatedSpan'
 
 type ProjectProps = {
   title: string
@@ -38,22 +39,18 @@ function Project({ desc, tech, title, live, git, image }: ProjectProps) {
         <p className="max-w-prose text-sm text-zinc-700">{desc}</p>
 
         {live && (
-          <a
-            href={live}
-            target="_blank"
-            className="mt-auto ml-auto text-sky-800 font-bold underline"
-          >
-            ver online
+          <a href={live} target="_blank" className="mt-auto ml-auto">
+            <AnimatedSpan className=" text-sky-800 font-bold underline">
+              ver online
+            </AnimatedSpan>
           </a>
         )}
 
         {git && (
-          <a
-            href={git}
-            target="_blank"
-            className="mt-auto ml-auto text-sky-800 font-bold underline"
-          >
-            ver código
+          <a href={git} target="_blank" className="mt-auto ml-auto">
+            <AnimatedSpan className=" text-sky-800 font-bold underline">
+              ver código
+            </AnimatedSpan>
           </a>
         )}
       </div>

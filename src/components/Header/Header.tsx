@@ -1,26 +1,20 @@
 import Link from 'next/link'
-import React from 'react'
+import AnimatedSpan from '../AnimatedSpan'
 
 const Header = () => {
   return (
-    <header className="h-[48px] flex justify-center items-center uppercase text-bold  gap-4 bg-sky-800 text-white sticky top-0 z-20">
-      <Link
-        href="#experience"
-        className="hover:text-sky-500 transition-colors duration-300"
-      >
-        Experiência
+    <header className="py-4 min-h-[48px] flex justify-center flex-wrap items-center uppercase text-bold  gap-4 bg-sky-800 text-white sticky top-0 z-20">
+      <Link href="#experience">
+        <AnimatedSpan>Experiência</AnimatedSpan>
       </Link>
-      <Link
-        href="#projects"
-        className="hover:text-sky-500 transition-colors duration-300"
-      >
-        Projetos
+      <Link href="#certificados">
+        <AnimatedSpan>Certificados</AnimatedSpan>
       </Link>
-      <Link
-        href="#contact-me"
-        className="hover:text-sky-500 transition-colors duration-300"
-      >
-        Contato
+      <Link href="#projects">
+        <AnimatedSpan>Projetos</AnimatedSpan>
+      </Link>
+      <Link href="#contact-me">
+        <AnimatedSpan>Contato</AnimatedSpan>
       </Link>
     </header>
   )
