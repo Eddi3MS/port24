@@ -23,7 +23,7 @@ const Hero = async () => {
         <p className="text-sm font-semibold text-zinc-800 underline-offset-2 underline">
           Desenvolvedor React & Next.js
         </p>
-        <Socials />
+        <Socials className="justify-center sm:justify-start mb-8" />
       </div>
       <div className="absolute bottom-0 left-0 w-full overflow-hidden [line-height:0] rotate-180">
         <svg

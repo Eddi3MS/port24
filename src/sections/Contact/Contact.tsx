@@ -78,9 +78,13 @@ const Contact = () => {
       <Section
         id="contact-me"
         title="Contato"
-        className="max-w-5xl mx-auto px-4"
+        subtitle="Envie sua mensagem e retornarei o mais breve possível."
+        className="max-w-2xl mx-auto px-4 text-center"
       >
-        <form onSubmit={handleSubmit(submitMessage)} className="grid gap-5">
+        <form
+          onSubmit={handleSubmit(submitMessage)}
+          className="grid gap-5 text-left"
+        >
           <Input
             label="Nome:"
             type="text"
@@ -119,7 +123,7 @@ const Contact = () => {
           </Button>
         </form>
 
-        <Socials className="justify-center py-5" />
+        <Socials className="justify-center" />
         <AnimatePresence>
           {!!feedback.title && (
             <Modal title={feedback.title} closeModal={clearFeedback}>
