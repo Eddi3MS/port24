@@ -1,7 +1,7 @@
 'use client'
-import { motion, useInView } from 'framer-motion'
+import { useIsInView } from '@/hooks/useIsInView'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useRef } from 'react'
 import { BadgeList } from '..'
 import AnimatedSpan from '../AnimatedSpan'
 
@@ -15,8 +15,7 @@ type ProjectProps = {
 }
 
 function Project({ desc, tech, title, live, git, image }: ProjectProps) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '0px 100px -50px 0px' })
+  const { isInView, ref } = useIsInView()
 
   return (
     <motion.div

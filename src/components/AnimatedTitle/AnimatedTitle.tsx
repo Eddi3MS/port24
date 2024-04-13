@@ -1,6 +1,6 @@
 'use client'
-import React, { useRef } from 'react'
-import { useInView, motion } from 'framer-motion'
+import { useIsInView } from '@/hooks/useIsInView'
+import { motion } from 'framer-motion'
 
 const variants = {
   hidden: { opacity: 0 },
@@ -14,8 +14,7 @@ const variants = {
 }
 
 const AnimatedTitle = ({ text }: { text: string }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '0px 100px -50px 0px', once: true })
+  const { isInView, ref } = useIsInView()
 
   const splitText = text.split('')
 

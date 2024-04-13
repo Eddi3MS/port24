@@ -1,7 +1,7 @@
 'use client'
-import React, { useRef } from 'react'
+import { useIsInView } from '@/hooks/useIsInView'
+import { motion } from 'framer-motion'
 import { BadgeList } from '..'
-import { useInView, motion } from 'framer-motion'
 
 type ExperienceCardProps = {
   title: string
@@ -18,8 +18,7 @@ function ExperienceCard({
   time,
   title,
 }: ExperienceCardProps) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '0px 100px -50px 0px' })
+  const { isInView, ref } = useIsInView()
 
   return (
     <motion.div

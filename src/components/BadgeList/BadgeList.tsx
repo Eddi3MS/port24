@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useIsInView } from '@/hooks/useIsInView'
+import { motion } from 'framer-motion'
 
 type BadgeListProps = {
   words: string[]
@@ -20,8 +20,8 @@ const variants = {
 }
 
 const BadgeList = ({ words, size = 'sm' }: BadgeListProps) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '0px 100px -50px 0px', once: true })
+  const { isInView, ref } = useIsInView()
+
   let sizes =
     size === 'sm' ? 'rounded-2xl font-semibold text-sm' : 'rounded-xl text-xs'
 

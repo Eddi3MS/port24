@@ -1,6 +1,6 @@
 'use client'
-import { useInView, motion } from 'framer-motion'
-import React, { useRef } from 'react'
+import { useIsInView } from '@/hooks/useIsInView'
+import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 
 type CertificateProps = {
@@ -11,8 +11,8 @@ type CertificateProps = {
 }
 
 const Certificate = ({ desc, time, title, className }: CertificateProps) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '0px 100px -50px 0px' })
+  const { isInView, ref } = useIsInView()
+
   return (
     <motion.div
       ref={ref}
