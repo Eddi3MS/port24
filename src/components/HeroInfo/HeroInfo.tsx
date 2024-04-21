@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Socials from '../Socials'
 import AnimatedSpan from '../AnimatedSpan'
+import Socials from '../Socials'
 
 const container = {
   hidden: { opacity: 0 },
@@ -12,12 +12,12 @@ const container = {
   },
 }
 
-const HeroInfo = ({ name, avatar }: { name: string; avatar: string }) => {
+const HeroInfo = () => {
   return (
     <>
       <AnimatedSpan className="drop-shadow-sm rounded-full justify-self-center md:justify-self-end overflow-hidden">
         <Image
-          src={avatar}
+          src="https://avatars.githubusercontent.com/u/75024157?v=4"
           width={300}
           height={300}
           alt="Edson Marcelo"
@@ -34,7 +34,7 @@ const HeroInfo = ({ name, avatar }: { name: string; avatar: string }) => {
         animate="show"
       >
         <h2 className="text-lg font-semibold text-zinc-800">Olá! Meu nome é</h2>
-        <h1 className="text-5xl font-extrabold text-zinc-900">{name}</h1>
+        <h1 className="text-5xl font-extrabold text-zinc-900">Edson Marcelo</h1>
         <p className="text-lg font-semibold text-zinc-800">
           Software Developer
         </p>

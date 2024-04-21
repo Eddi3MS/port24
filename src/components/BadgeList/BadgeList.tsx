@@ -1,48 +1,25 @@
 'use client'
 
-import { useIsInView } from '@/hooks/useIsInView'
-import { motion } from 'framer-motion'
-
 type BadgeListProps = {
   words: string[]
   size?: 'xs' | 'sm'
 }
 
-const variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      type: 'spring',
-    },
-  },
-}
-
 const BadgeList = ({ words, size = 'sm' }: BadgeListProps) => {
-  const { isInView, ref } = useIsInView()
-
   let sizes =
     size === 'sm' ? 'rounded-2xl font-semibold text-sm' : 'rounded-xl text-xs'
 
   return (
-    <motion.ul
-      className="flex flex-wrap gap-1"
-      variants={variants}
-      initial="hidden"
-      animate={isInView && 'visible'}
-      ref={ref}
-    >
+    <ul className="flex flex-wrap gap-1">
       {words.map((word) => (
-        <motion.li
+        <li
           key={word.trim()}
           className={`bg-sky-800 text-white px-3 py-1 capitalize ${sizes}`}
-          variants={variants}
         >
           {word}
-        </motion.li>
+        </li>
       ))}
-    </motion.ul>
+    </ul>
   )
 }
 

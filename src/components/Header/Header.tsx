@@ -4,16 +4,16 @@ import AnimatedSpan from '../AnimatedSpan'
 const Header = () => {
   return (
     <header className="py-4 min-h-[48px] flex justify-center flex-wrap items-center uppercase text-bold  gap-4 bg-sky-800 text-white sticky top-0 z-20">
-      <Link href="#experience">
+      <Link href="/">
+        <AnimatedSpan>Inicio</AnimatedSpan>
+      </Link>
+      <Link href="/experience">
         <AnimatedSpan>Experiência</AnimatedSpan>
       </Link>
-      <Link href="#certificates">
-        <AnimatedSpan>Certificados</AnimatedSpan>
-      </Link>
-      <Link href="#projects">
+      <Link href="/projects">
         <AnimatedSpan>Projetos</AnimatedSpan>
       </Link>
-      <Link href="#contact-me">
+      <Link href="/contact">
         <AnimatedSpan>Contato</AnimatedSpan>
       </Link>
     </header>

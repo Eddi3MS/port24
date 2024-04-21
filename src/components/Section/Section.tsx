@@ -1,6 +1,5 @@
-import React, { ReactNode, HTMLAttributes } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import { twMerge } from 'tailwind-merge'
-import AnimatedTitle from '../AnimatedTitle'
 
 type Section = {
   id: string
@@ -28,13 +27,9 @@ const Section = ({
             !subtitle && 'mb-8'
           )}
         >
-          <AnimatedTitle text={`${title}:`} />
+          {title}:
         </h2>
-        {subtitle && (
-          <h3 className="mb-8 text-slate-600">
-            <AnimatedTitle text={subtitle} />
-          </h3>
-        )}
+        {subtitle && <h3 className="mb-8 text-slate-600">{subtitle}</h3>}
       </div>
       {children}
     </section>

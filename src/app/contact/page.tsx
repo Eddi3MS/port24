@@ -60,7 +60,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="relative bg-slate-200 pt-20 pb-10">
+    <div className="relative bg-slate-200 pt-10 pb-10 flex-1">
       <div className="absolute top-0 left-0 w-full overflow-hidden [line-height:0]">
         <svg
           data-name="Layer 1"
