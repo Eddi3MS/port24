@@ -25,15 +25,6 @@ export const projects = [
     git: 'https://github.com/Eddi3MS/haven',
   },
   {
-    id: '07',
-    image: BlogIMG.src,
-    title: 'CodeLeap Network',
-    tech: ['React.Js', 'React Hooks', 'Redux Toolkit', 'Radix UI', 'Axios'],
-    desc: `Teste aplicado pela Codeleap, onde provido de uma api, pude implementar 
-    um sistema de posts, com criação, edição, deleção e listagem (CRUD).`,
-    live: 'https://www.codeleap.edsonmarcelo.com.br/',
-  },
-  {
     id: '107',
     image: deliverizeIMG.src,
     title: 'Deliveryze',
@@ -86,11 +77,18 @@ export const es_certificates = [
     url: 'https://www.udemy.com/certificate/UC-8f23d51a-48a8-4c8f-9200-c9902ffaf6be/',
   },
   {
+    id: 4,
+    title: 'Next.js - Complete Guide - Academind',
+    time: '25 horas',
+    desc: 'Curso prático focado no framework Next.js. Embora a data de emissão esteja datada à 15 out. 2021, o curso esta sempre sendo atualizado de acordo com as novas versões do Next.',
+    url: 'https://www.udemy.com/certificate/UC-8f23d51a-48a8-4c8f-9200-c9902ffaf6be/',
+  },
+  {
     id: 3,
-    title: 'Web Moderno com Javascript - Cod3r',
-    time: '97 horas',
-    desc: 'Curso prático que demonstra de tudo um pouco o universo de desenvolvimento web, dos protocolos http, aos bancos de dado sqm e nosql, passando pelo backend em node até as libs frontend mais famosas: vue, angular e react.',
-    url: 'https://www.udemy.com/certificate/UC-48ad8eaa-786e-45dc-9fde-4f55807be105/',
+    title: 'EF SET - Certificação Inglês C1',
+    time: '1 hora',
+    desc: 'Este certificado reflete meu desempenho em um teste de proficiência em inglês bastante renomado. O teste avaliou minhas habilidades de compreensão auditiva e leitura, oferecendo uma avaliação abrangente do meu conhecimento da língua inglesa.',
+    url: 'https://cert.efset.org/HXjCAy',
   },
   {
     id: 2,
