@@ -1,7 +1,6 @@
-import havenIMG from '@/assets/projects/haven.png'
 import deliverizeIMG from '@/assets/projects/deliverize.png'
+import havenIMG from '@/assets/projects/haven.png'
 import numbersIMG from '@/assets/projects/number.png'
-import BlogIMG from '@/assets/projects/blog.png'
 
 export const projects = [
   {
@@ -18,11 +17,11 @@ export const projects = [
       'Tailwind',
       'Cloudinary',
     ],
-    desc: `Este é um Sistema autoral desenvolvido com Next14,
-     e suas mais recentes features, NextAuth para autenticação e
-      autorização, Resend e React-Emails, Shadcn-UI, Neon DB, Prisma e Cloudinary.
-    `,
-    git: 'https://github.com/Eddi3MS/haven',
+    desc: `Um marketplace de imóveis que conecta compradores e proprietários para negociações diretas. 
+    Inclui autenticação robusta com login de dois fatores, validação de e-mails e login social. 
+    Além disso, possui funcionalidades de envio de e-mails para validação de cadastro e notificações de status de anúncios. 
+    Utiliza as mais recentes features do Next.js, como rotas paralelas e de interceptação, SSR, loadings e permissões de rotas.`,
+    live: 'https://haven.edsonmarcelo.com.br',
   },
   {
     id: '107',

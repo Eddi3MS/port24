@@ -35,7 +35,9 @@ function Project({ desc, tech, title, live, git, image }: ProjectProps) {
       <div className="flex flex-col gap-2 flex-1">
         <h3 className="text-lg font-bold">{title}</h3>
         <BadgeList words={tech} size="xs" />
-        <p className="max-w-prose text-sm text-zinc-700">{desc}</p>
+        <p className="max-w-prose text-sm font-semibold text-zinc-700">
+          {desc}
+        </p>
 
         {live && (
           <a href={live} target="_blank" className="mt-auto ml-auto">
