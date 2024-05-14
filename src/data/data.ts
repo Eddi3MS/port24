@@ -1,6 +1,7 @@
 import deliverizeIMG from '@/assets/projects/deliverize.png'
 import havenIMG from '@/assets/projects/haven.png'
 import numbersIMG from '@/assets/projects/number.png'
+import riotIMG from '@/assets/projects/riot.png'
 
 export const projects = [
   {
@@ -8,14 +9,18 @@ export const projects = [
     image: havenIMG.src,
     title: 'Haven - Imóveis SA',
     tech: [
+      'React',
       'Next.js',
+      'Typescript',
       'Next Auth',
+      'React Hooks',
       'Resend',
       'Prisma',
       'Neon DB',
       'Shadcn-UI',
       'Tailwind',
       'Cloudinary',
+      'Zustand',
     ],
     desc: `Um marketplace de imóveis que conecta compradores e proprietários para negociações diretas. 
     Inclui autenticação robusta com login de dois fatores, validação de e-mails e login social. 
@@ -24,20 +29,29 @@ export const projects = [
     live: 'https://haven.edsonmarcelo.com.br',
   },
   {
+    id: '01',
+    image: riotIMG.src,
+    title: 'Riot - EloJob',
+    tech: [
+      'React',
+      'Next.js Static',
+      'Typescript',
+      'Framer Motion',
+      'React Hooks',
+      'Whatsapp',
+    ],
+    desc: `Um marketplace para serviços de Elojob e DuoBoost para League of Legends e Valorant,
+     com uma interface intuitiva, o sistema agiliza a forma que o usuário seleciona o serviço e suas opções detalhadas,
+      tendo feedback instantâneo dos valores do serviço a ser contratado e um link para fechar contrato no whatsapp.`,
+    live: 'https://riot.edsonmarcelo.com.br',
+  },
+  {
     id: '107',
     image: deliverizeIMG.src,
     title: 'Deliveryze',
     tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
     desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um design no figma e uma api, deveria replicar a tela e consumir os dados da api para povoar as informações da tela.',
     live: 'https://www.deliveryze.edsonmarcelo.com.br',
-  },
-  {
-    id: '02',
-    image: numbersIMG.src,
-    title: 'Adivinhe o Número',
-    tech: ['Javascript', 'Manipulação da DOM', 'Rest API'],
-    desc: 'Teste de habilidades básicas para uma vaga de desenvolvedor web, onde pude aprender e executar requisições http (para receber o número), e também manipular a DOM sem utilizar nenhum framework para exibir os números e feedbacks visuais ao usuário.',
-    live: 'https://guess1to300.netlify.app/',
   },
 ]
 
@@ -83,13 +97,6 @@ export const es_certificates = [
     url: 'https://www.udemy.com/certificate/UC-8f23d51a-48a8-4c8f-9200-c9902ffaf6be/',
   },
   {
-    id: 3,
-    title: 'EF SET - Certificação Inglês C1',
-    time: '1 hora',
-    desc: 'Este certificado reflete meu desempenho em um teste de proficiência em inglês bastante renomado. O teste avaliou minhas habilidades de compreensão auditiva e leitura, oferecendo uma avaliação abrangente do meu conhecimento da língua inglesa.',
-    url: 'https://cert.efset.org/HXjCAy',
-  },
-  {
     id: 2,
     title: 'CSS com SASS - Origamid',
     time: '12 horas',
@@ -102,5 +109,12 @@ export const es_certificates = [
     time: '36 horas',
     desc: 'Curso prático de react, onde explorando todas as key features do próprio, é desenvolvida uma rede social para doguinhos.',
     url: 'https://www.origamid.com/certificate/614a630c/',
+  },
+  {
+    id: 3,
+    title: 'EF SET - Certificação Inglês C1',
+    time: '',
+    desc: 'Este certificado reflete meu desempenho em um teste de proficiência em inglês bastante renomado. O teste avaliou minhas habilidades de compreensão auditiva e leitura, oferecendo uma avaliação abrangente do meu conhecimento da língua inglesa.',
+    url: 'https://cert.efset.org/HXjCAy',
   },
 ]

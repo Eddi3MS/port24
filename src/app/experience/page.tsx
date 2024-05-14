@@ -50,10 +50,10 @@ const Page = () => {
           ))}
 
           <Certificate
-            title="Never stop learning"
+            title="Never Stop Learning"
             desc="Estou sempre me mantendo atualizado na stack através de documentações,
           videos específicos no Youtube e posts relacionados à area."
-            time="infinity"
+            time=""
             className="border-none"
           />
         </Section>
