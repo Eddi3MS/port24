@@ -1,7 +1,7 @@
 'use client'
 import { useIsInView } from '@/hooks/useIsInView'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { BadgeList } from '..'
 import AnimatedSpan from '../AnimatedSpan'
 
@@ -11,7 +11,7 @@ type ProjectProps = {
   tech: string[]
   live?: string
   git?: string
-  image: string
+  image: StaticImageData
 }
 
 function Project({ desc, tech, title, live, git, image }: ProjectProps) {
@@ -25,7 +25,8 @@ function Project({ desc, tech, title, live, git, image }: ProjectProps) {
     >
       <div className="min-w-[250px] mx-auto">
         <Image
-          src={image}
+          src={image.src}
+          blurDataURL={image.blurDataURL}
           alt={title}
           width={300}
           height={200}

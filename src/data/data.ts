@@ -1,12 +1,11 @@
 import deliverizeIMG from '@/assets/projects/deliverize.png'
 import havenIMG from '@/assets/projects/haven.png'
-import numbersIMG from '@/assets/projects/number.png'
 import riotIMG from '@/assets/projects/riot.png'
 
 export const projects = [
   {
     id: '08',
-    image: havenIMG.src,
+    image: havenIMG,
     title: 'Haven - Imóveis SA',
     tech: [
       'React',
@@ -30,7 +29,7 @@ export const projects = [
   },
   {
     id: '01',
-    image: riotIMG.src,
+    image: riotIMG,
     title: 'Riot - EloJob',
     tech: [
       'React',
@@ -47,7 +46,7 @@ export const projects = [
   },
   {
     id: '107',
-    image: deliverizeIMG.src,
+    image: deliverizeIMG,
     title: 'Deliveryze',
     tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
     desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um design no figma e uma api, deveria replicar a tela e consumir os dados da api para povoar as informações da tela.',
