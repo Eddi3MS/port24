@@ -88,13 +88,7 @@ export const es_certificates = [
     desc: 'Curso prático focado no framework Next.js. Embora a data de emissão esteja datada à 15 out. 2021, o curso esta sempre sendo atualizado de acordo com as novas versões do Next.',
     url: 'https://www.udemy.com/certificate/UC-8f23d51a-48a8-4c8f-9200-c9902ffaf6be/',
   },
-  {
-    id: 4,
-    title: 'Next.js - Complete Guide - Academind',
-    time: '25 horas',
-    desc: 'Curso prático focado no framework Next.js. Embora a data de emissão esteja datada à 15 out. 2021, o curso esta sempre sendo atualizado de acordo com as novas versões do Next.',
-    url: 'https://www.udemy.com/certificate/UC-8f23d51a-48a8-4c8f-9200-c9902ffaf6be/',
-  },
+
   {
     id: 2,
     title: 'CSS com SASS - Origamid',
