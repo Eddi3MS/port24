@@ -29,7 +29,7 @@ export const sendMessage = async (
   try {
     await resend.emails.send({
       from: 'portfolio@edsonmarcelo.com.br',
-      to: 'edsonmarc2014@gmail.com',
+      to: process.env.EMAIL_TO!,
       subject: `Portfolio Message: `,
       html: `<h1 style="text-align: 'center';">Mensagem de: ${parse.data.name}</h1>
     <p style="text-align: 'center';">${parse.data.message}</p>
