@@ -36,10 +36,14 @@ const HeroInfo = () => {
         <h2 className="text-lg font-semibold text-zinc-800">Olá! Meu nome é</h2>
         <h1 className="text-5xl font-extrabold text-zinc-900">Edson Marcelo</h1>
         <p className="text-lg font-semibold text-zinc-800">
-          Software Developer
+          Desenvolvedor de Software
         </p>
         <p className="text-xs font-semibold text-zinc-600">
-          Javascript, Typescript, React & Next.js..
+          Especializado em{' '}
+          <span className="text-blue-600 font-bold">Javascript</span>,{' '}
+          <span className="text-blue-600 font-bold">Typescript</span>,{' '}
+          <span className="text-blue-600 font-bold">React</span> &{' '}
+          <span className="text-blue-600 font-bold">Next.js</span>.
         </p>
 
         <Socials className="justify-center sm:justify-start mb-8" />

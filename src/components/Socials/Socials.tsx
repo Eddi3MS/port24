@@ -1,4 +1,4 @@
-import { Download_SVG, Linkedin_SVG, Whats_SVG } from '@/icons'
+import { Download_SVG, Github_SVG, Linkedin_SVG, Whats_SVG } from '@/icons'
 import { HTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 import AnimatedSpan from '../AnimatedSpan'
@@ -21,6 +21,18 @@ const Socials = ({ className }: HTMLAttributes<HTMLDivElement>) => {
       >
         <AnimatedSpan>{Linkedin_SVG}</AnimatedSpan>
       </a>
+
+      <a
+        href="https://github.com/Eddi3MS"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-sky-500 transition-colors duration-300"
+        title="navegar para o meu github"
+        aria-label="navegar para o meu perfil no github"
+      >
+        <AnimatedSpan>{Github_SVG}</AnimatedSpan>
+      </a>
+
       <a
         href="https://api.whatsapp.com/send/?phone=%2B5537999853557"
         target="_blank"

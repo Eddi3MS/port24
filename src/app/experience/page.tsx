@@ -51,8 +51,7 @@ const Page = () => {
 
           <Certificate
             title="Never Stop Learning"
-            desc="Estou sempre me mantendo atualizado na stack através de documentações,
-          videos específicos no Youtube e posts relacionados à area."
+            desc="Estou sempre me mantendo atualizado com os últimos updates da stack frontend e também sempre buscando conhecimento de novas tecnologias."
             time=""
             className="border-none"
           />
