@@ -11,15 +11,36 @@ const Page = () => {
         className="max-w-5xl mx-auto mt-10 mb-16 px-4"
       >
         <ExperienceCard
+          badges={[
+            'Salesforce Marketing Cloud',
+            'Ampscript',
+            'HTML',
+            'CSS',
+            'Javascript',
+          ]}
+          desc="- Desenvolvimento de e-mails dinâmicos e interativos na SF/
+          - Extração de e-mails da SF e adaptação para outros disparadores/
+          - Criação de CloudPages na SF com HTML, CSS, Javascript e Ampscript"
+          listTitle="Ferramentas utilizadas:"
+          time="15/07/24 à 02/08/24"
+          title="Desenvolvedor Salesforce - Freelancer"
+        />
+
+        <ExperienceCard
           badges={ts_techs}
-          desc="Como desenvolvedor frontend na teamsoft, minhas responsabilidades
-          abrangiam desde o desenvolvimento da interface, lógica de interações e
-          integrações, testes funcionais, até a configuração e deploy da
-          aplicação. Além disso, participação de reuniões diárias e semanais
-          para discutir o progresso e metas para a sprint (SCRUM)."
+          desc="- Desenvolvimento das interfaces elaboradas pela equipe de UI-UX/
+          - Implementação da lógica e integração com API's REST/
+          - Utilização extensiva de React com Typescript/
+          - Controle de estados globais com Redux/
+          - Controle de cache com React-Query /
+          - Validações com Zod e React-Hood-Forms/
+          - Versionamento de código com GIT - Git Flow /
+          - Gerenciamento de tasks com Azure e Jira /
+          - Rotinas baseadas em SCRUM - daily, sprints, reviews.. -  
+          "
           listTitle="Ferramentas utilizadas:"
           time="03/22 à 07/23"
-          title="Desenvolvedor Frontend - Teamsoft"
+          title="Desenvolvedor React & Next.js - Teamsoft"
         />
       </Section>
 

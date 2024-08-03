@@ -30,9 +30,14 @@ function ExperienceCard({
         {title}
         <span className="text-sm text-sky-900 font-bold min-w-max">{time}</span>
       </h3>
-      <p className="text-[clamp(0.875rem,0.7639rem+0.5556vi,1.125rem)">
-        {desc}
-      </p>
+      <ul>
+        {desc.split('/').map((l, i) => (
+          <li key={i} className="text-[clamp(0.65rem,0.7639rem+0.5556vi,1rem)">
+            {l}
+          </li>
+        ))}
+      </ul>
+
       <div className="grid gap-2">
         <h4 className="text-base font-semibold text-zinc-900">{listTitle}</h4>
         <BadgeList words={badges} />
