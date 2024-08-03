@@ -39,7 +39,7 @@ const Page = () => {
           - Rotinas baseadas em SCRUM - daily, sprints, reviews.. -  
           "
           listTitle="Ferramentas utilizadas:"
-          time="03/22 à 07/23"
+          time="07/03/22 à 31/07/23"
           title="Desenvolvedor React & Next.js - Teamsoft"
         />
       </Section>
