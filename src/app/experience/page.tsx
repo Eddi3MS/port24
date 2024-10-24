@@ -17,13 +17,14 @@ const Page = () => {
             'HTML',
             'CSS',
             'Javascript',
+            'Marketing',
           ]}
-          desc="- Desenvolvimento de e-mails dinâmicos e interativos na SF/
-          - Extração de e-mails da SF e adaptação para outros disparadores/
+          desc="- Desenvolvimento de e-mails dinâmicos e interativos na Salesforce/
+          - Extração e adaptação de e-mails da SF para outros disparadores/
           - Criação de CloudPages na SF com HTML, CSS, Javascript e Ampscript"
           listTitle="Ferramentas utilizadas:"
-          time="15/07/24 à 02/08/24"
-          title="Desenvolvedor Salesforce - Freelancer"
+          time="15/07/24 à 20/10/24"
+          title="Oliver Marketing - Freelancer"
         />
 
         <ExperienceCard
