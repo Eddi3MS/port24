@@ -5,6 +5,10 @@ const FrozenRoute = ({ children }: PropsWithChildren) => {
   const context = useContext(LayoutRouterContext)
   const frozen = useRef(context).current
 
+  if (!frozen) {
+    return <>{children}</>
+  }
+
   return (
     <LayoutRouterContext.Provider value={frozen}>
       {children}
