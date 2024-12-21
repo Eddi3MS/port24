@@ -9,7 +9,10 @@ export function getTimePassed(sinceDate: Date) {
   const days = now.diff(pastDate, 'day') % 30 // Approximate
   const hours = now.diff(pastDate, 'hour') % 24
   const minutes = now.diff(pastDate, 'minute') % 60
-  const seconds = now.diff(pastDate, 'second') % 60
 
-  return `${years} anos, ${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`
+  return `${years} ano${years > 1 ? 's' : ''}, ${months} mese${
+    months > 1 ? 's' : ''
+  }, ${days} dia${days > 1 ? 's' : ''}, ${hours} hora${
+    hours > 1 ? 's' : ''
+  } e ${minutes} minuto${minutes > 1 ? 's' : ''}`
 }
