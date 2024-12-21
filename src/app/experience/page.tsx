@@ -17,13 +17,14 @@ const Page = () => {
             'HTML',
             'CSS',
             'Javascript',
-            'Marketing',
+            'Figma',
+            'Adobe XD',
           ]}
-          desc="- Desenvolvimento de e-mails dinâmicos e interativos na Salesforce/
-          - Extração e adaptação de e-mails da SF para outros disparadores/
-          - Criação de CloudPages na SF com HTML, CSS, Javascript e Ampscript"
+          desc="- Criação de e-mails estáticos, dinâmicos e interativos;/
+          - Desenvolvimento de landing pages no Salesforce Marketing Cloud;/
+          - Testes para garantir responsividade e consistência cross-providers."
           listTitle="Ferramentas utilizadas:"
-          time="15/07/24 à 20/10/24"
+          time="15/07/24 à 26/12/24"
           title="Oliver Marketing - Freelancer"
         />
 
