@@ -1,8 +1,8 @@
 import dayjs from 'dayjs'
 
-export function getTimePassed(sinceDate: Date) {
+export function getTimePassed() {
+  const pastDate = dayjs('07/03/2022 9:00', 'MM/DD/YYYY HH:mm')
   const now = dayjs()
-  const pastDate = dayjs(sinceDate)
 
   const years = now.diff(pastDate, 'year')
   const months = now.diff(pastDate, 'month') % 12

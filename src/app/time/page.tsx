@@ -1,17 +1,15 @@
 'use client'
-import { Button, Input, Section } from '@/components'
+import { Input, Section } from '@/components'
 import { getTimePassed } from '@/utils/getTimePassed'
 import React, { useEffect, useState } from 'react'
 
-const start = new Date('07/03/2022')
-
 export default function Timer() {
-  const [time, setTime] = useState(getTimePassed(start))
+  const [time, setTime] = useState(getTimePassed())
   const [input, setInput] = useState('')
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(getTimePassed(start))
+      setTime(getTimePassed())
     }, 1000 * 60)
 
     return () => {
@@ -34,7 +32,7 @@ export default function Timer() {
             {time}
           </span>
           <span className="text-xs">
-            Tempo decorrido desde meu primeiro emprego na área em 07/03/2022.
+            Tempo decorrido desde 07/03/2022 às 09:00 AM.
           </span>
         </div>
       ) : (
