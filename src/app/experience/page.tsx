@@ -24,8 +24,8 @@ const Page = () => {
           - Desenvolvimento de landing pages no Salesforce Marketing Cloud;/
           - Testes para garantir responsividade e consistência cross-providers."
           listTitle="Ferramentas utilizadas:"
-          time="15/07/24 à 26/12/24"
-          title="Oliver Marketing - Freelancer"
+          time="15/07/24 à 21/03/24"
+          title="Desenvolvedor Freelancer na Oliver LATAM"
         />
 
         <ExperienceCard
