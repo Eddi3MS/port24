@@ -23,7 +23,7 @@ const Modal = ({
       <motion.div
         className="bg-white rounded shadow-lg z-50 relative flex flex-col overflow-auto max-h-[70vh]"
         style={{
-          width: isDetails ? 'max(640px, 90%)' : 'min(240px, 90%)',
+          width: isDetails ? 'min(640px, 90%)' : 'min(240px, 90%)',
         }}
         variants={{
           hidden: { opacity: 0, y: 30 },
