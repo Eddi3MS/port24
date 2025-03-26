@@ -93,7 +93,7 @@ const HeroInfo = () => {
               de dados SQL e NO SQL. <br />
               <br /> Também tenho conhecimentos em <b>react-native</b>, caso
               haja a oportunidade, tenho interesse em me aprofundar. <br />
-              <br /> Saindo da stack: Tenho experiência trabalhando com
+              <br /> Saindo da stack: Tenho experiência trabalhando com{' '}
               <b>Salesforce marketing cloud</b>, desenvolvendo e-mails dinâmicos
               e interativos consistentes cross-providers e cloud pages dentro da
               plataforma.
