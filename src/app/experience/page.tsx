@@ -20,9 +20,10 @@ const Page = () => {
             'Figma',
             'Adobe XD',
           ]}
-          desc="- Criação de e-mails estáticos, dinâmicos e interativos;/
-          - Desenvolvimento de landing pages no Salesforce Marketing Cloud;/
-          - Testes para garantir responsividade e consistência cross-providers."
+          desc="
+          - Desenvolvimento de e-mails marketing estáticos, dinâmicos e interativos para campanhas internas./
+- Criação e implementação de landing pages no Salesforce Marketing Cloud./
+- Execução de testes para garantir responsividade e consistência cross-providers."
           listTitle="Ferramentas utilizadas:"
           time="15/07/24 à 21/03/24"
           title="Desenvolvedor Freelancer na Oliver LATAM"
