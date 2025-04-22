@@ -1,8 +1,36 @@
 import deliverizeIMG from '@/assets/projects/deliverize.png'
 import havenIMG from '@/assets/projects/haven.png'
 import riotIMG from '@/assets/projects/riot.png'
+import namoroIMG from '@/assets/projects/namoro-catolico.png'
 
 export const projects = [
+  {
+    id: '28',
+    image: namoroIMG,
+    title: 'Namoro Católico',
+    tech: [
+      'Next.js',
+      'Typescript',
+      'Prisma',
+      'Neon DB',
+      'Tailwind',
+      'Framer Motion',
+      'Cloudinary',
+      'Websockets',
+      'Nodemailer',
+      'Upstash/Redis',
+      'React Query',
+      'React Hook Forms',
+      'Zod',
+      'Zustand',
+      'Shadcn',
+    ],
+    desc: `Aplicação fullstack de namoro para católicos desenvolvida com Next.js, incluindo fluxo completo de autenticação e recuperação.  
+Conta com chat em tempo real implementado com WebSockets e hospedado em servidor VPS dedicado. O app também inclui sistema de bloqueio entre usuários, moderação e controle de acesso por regras de negócio.
+
+`,
+    live: 'https://www.namoro-catolico.com',
+  },
   {
     id: '08',
     image: havenIMG,
@@ -10,21 +38,18 @@ export const projects = [
     tech: [
       'React',
       'Next.js',
-      'Typescript',
       'Next Auth',
-      'React Hooks',
-      'Resend',
+      'Typescript',
       'Prisma',
       'Neon DB',
-      'Shadcn-UI',
       'Tailwind',
       'Cloudinary',
+      'Resend',
       'Zustand',
     ],
-    desc: `Um marketplace de imóveis que conecta compradores e proprietários para negociações diretas. 
-    Inclui autenticação robusta com login de dois fatores, validação de e-mails e login social. 
-    Além disso, possui funcionalidades de envio de e-mails para validação de cadastro e notificações de status de anúncios. 
-    Utiliza as mais recentes features do Next.js, como rotas paralelas e de interceptação, SSR, loadings e permissões de rotas.`,
+    desc: `Marketplace imobiliário com autenticação segura (2FA, login social e validação de e-mail), publicação de anúncios com moderação e contato direto entre comprador e vendedor.  
+Inclui notificações por e-mail e aproveita recursos avançados do Next.js 14, como rotas paralelas, interceptações, SSR e controle de acesso por rota.
+`,
     live: 'https://haven.edsonmarcelo.com.br',
   },
   {

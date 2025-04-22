@@ -23,14 +23,14 @@ function Project({ desc, tech, title, live, git, image }: ProjectProps) {
       animate={{ scale: isInView ? 1 : 0.7 }}
       className="flex flex-col md:flex-row gap-y-2 gap-x-4 shadow-sm bg-white p-2 rounded-md"
     >
-      <div className="min-w-[250px] mx-auto">
+      <div className="min-w-[250px] mx-auto md:rounded-md shadow-sm border-2 border-sky-800 p-1">
         <Image
           src={image.src}
           blurDataURL={image.blurDataURL}
           alt={title}
           width={300}
           height={200}
-          className="md:rounded-l-md shadow-sm"
+          className="rounded-md"
         />
       </div>
       <div className="flex flex-col gap-2 flex-1">
