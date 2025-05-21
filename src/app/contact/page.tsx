@@ -77,7 +77,7 @@ const Contact = () => {
       </div>
       <Section
         id="contact-me"
-        title="Contato"
+        title="Contato Profissional"
         subtitle="Envie sua mensagem e retornarei o mais breve possível."
         className="max-w-2xl mx-auto px-4 text-center"
       >

@@ -24,7 +24,7 @@ const Section = ({
         <h2
           className={twMerge(
             'text-[clamp(1.5rem,1.1667rem+1.6667vi,2.25rem)] font-semibold',
-            !subtitle && 'mb-8'
+            !subtitle && 'mb-4'
           )}
         >
           {title}:

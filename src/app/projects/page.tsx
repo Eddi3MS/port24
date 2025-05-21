@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Section
       id="projects"
-      title="Projetos"
+      title="Criações Recentes"
       className="max-w-5xl mx-auto mt-10 mb-16 px-4"
     >
       {projects.map(({ id, ...project }) => (

@@ -1,9 +1,51 @@
-import deliverizeIMG from '@/assets/projects/deliverize.png'
+import schedulerIMG from '@/assets/projects/scheduler.png'
 import havenIMG from '@/assets/projects/haven.png'
 import riotIMG from '@/assets/projects/riot.png'
 import namoroIMG from '@/assets/projects/namoro-catolico.png'
 
 export const projects = [
+  {
+    id: '107',
+    image: schedulerIMG,
+    title: 'Sistema de Agendamentos',
+    tech: [
+      'Next.js',
+      'Typescript',
+      'React',
+      'React Hook Form',
+      'Zod',
+      'Zustand',
+      'Tailwind',
+      'Node',
+      'Express',
+      'PostgreSQL',
+      'Docker',
+      'SSE',
+      'REST API',
+    ],
+    desc: 'Sistema inteligente de agendamentos, com lógica avançada que calcula automaticamente os horários disponíveis com base na duração dos serviços, agenda dos profissionais, pausas e dias de folga. A solução evita conflitos, garante agendamentos em tempo real e oferece um painel administrativo para gestão completa de horários e serviços. Ideal para negócios que buscam automatizar o atendimento, reduzir erros e proporcionar uma experiência moderna e prática aos clientes. Embora a landing page tenha sido criada para uma barbearia, o sistema é altamente versátil e pode ser facilmente adaptado para qualquer tipo de serviço baseado em agendamentos.',
+    live: 'https://scheduler.edsonmarcelo.com.br/',
+  },
+
+  {
+    id: '08',
+    image: havenIMG,
+    title: 'Haven - Imóveis SA',
+    tech: [
+      'React',
+      'Next.js',
+      'Next Auth',
+      'Typescript',
+      'Prisma',
+      'Neon DB',
+      'Tailwind',
+      'Cloudinary',
+      'Resend',
+      'Zustand',
+    ],
+    desc: `Marketplace de imóveis que conecta diretamente compradores e vendedores, facilitando o processo de compra, venda e aluguel. O projeto inclui autenticação segura com verificação em duas etapas, login social e validação por e-mail. Os anúncios passam por moderação antes de serem exibidos, e os usuários recebem notificações automáticas por e-mail sobre o andamento de suas publicações. O sistema foi planejado para ser escalável e eficiente, com carregamento rápido e rotas otimizadas.`,
+    live: 'https://haven.edsonmarcelo.com.br',
+  },
   {
     id: '28',
     image: namoroIMG,
@@ -25,32 +67,8 @@ export const projects = [
       'Zustand',
       'Shadcn',
     ],
-    desc: `Aplicação fullstack de namoro para católicos desenvolvida com Next.js, incluindo fluxo completo de autenticação e recuperação.  
-Conta com chat em tempo real implementado com WebSockets e hospedado em servidor VPS dedicado. O app também inclui sistema de bloqueio entre usuários, moderação e controle de acesso por regras de negócio.
-
-`,
+    desc: `Plataforma completa de relacionamento criada especialmente para o público católico, promovendo conexões seguras e alinhadas à fé. O sistema conta com cadastro e verificação rigorosa dos perfis, chat em tempo real, sistema de bloqueio de usuários e ferramentas de moderação para garantir um ambiente respeitoso. Todo o fluxo de autenticação e recuperação de conta foi desenvolvido com foco na segurança e privacidade. A aplicação é hospedada em servidor próprio, garantindo estabilidade e controle total da operação.`,
     live: 'https://www.namoro-catolico.com',
-  },
-  {
-    id: '08',
-    image: havenIMG,
-    title: 'Haven - Imóveis SA',
-    tech: [
-      'React',
-      'Next.js',
-      'Next Auth',
-      'Typescript',
-      'Prisma',
-      'Neon DB',
-      'Tailwind',
-      'Cloudinary',
-      'Resend',
-      'Zustand',
-    ],
-    desc: `Marketplace imobiliário com autenticação segura (2FA, login social e validação de e-mail), publicação de anúncios com moderação e contato direto entre comprador e vendedor.  
-Inclui notificações por e-mail e aproveita recursos avançados do Next.js 14, como rotas paralelas, interceptações, SSR e controle de acesso por rota.
-`,
-    live: 'https://haven.edsonmarcelo.com.br',
   },
   {
     id: '01',
@@ -64,18 +82,8 @@ Inclui notificações por e-mail e aproveita recursos avançados do Next.js 14, 
       'React Hooks',
       'Whatsapp',
     ],
-    desc: `Um marketplace para serviços de Elojob e DuoBoost para League of Legends e Valorant,
-     com uma interface intuitiva, o sistema agiliza a forma que o usuário seleciona o serviço e suas opções detalhadas,
-      tendo feedback instantâneo dos valores do serviço a ser contratado e um link para fechar contrato no whatsapp.`,
+    desc: `Plataforma de contratação de serviços para jogadores de League of Legends e Valorant. A interface foi pensada para ser extremamente intuitiva: o usuário escolhe o serviço desejado, configura as opções com facilidade e recebe um valor final em tempo real, com botão direto para contratar via WhatsApp. O foco do projeto foi oferecer uma experiência rápida, clara e visualmente atrativa para um público jovem e exigente.`,
     live: 'https://riot.edsonmarcelo.com.br',
-  },
-  {
-    id: '107',
-    image: deliverizeIMG,
-    title: 'Deliveryze',
-    tech: ['React.Js', 'React Hooks', 'Context API', 'REST API'],
-    desc: 'Página desenvolvida para o teste de habilidades técnicas da Teamsoft. Provido de um design no figma e uma api, deveria replicar a tela e consumir os dados da api para povoar as informações da tela.',
-    live: 'https://www.deliveryze.edsonmarcelo.com.br',
   },
 ]
 

@@ -7,7 +7,7 @@ const Page = () => {
     <>
       <Section
         id="experience"
-        title="Experiência"
+        title="Minha Jornada"
         className="max-w-5xl mx-auto mt-10 mb-16 px-4"
       >
         <ExperienceCard
@@ -25,7 +25,7 @@ const Page = () => {
 - Criação e implementação de landing pages no Salesforce Marketing Cloud./
 - Execução de testes para garantir responsividade e consistência cross-providers."
           listTitle="Ferramentas utilizadas:"
-          time="15/07/24 à 21/03/24"
+          time="15/07/24 à 21/03/25"
           title="Desenvolvedor Freelancer na Oliver LATAM"
         />
 
