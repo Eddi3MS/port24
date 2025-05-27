@@ -68,35 +68,54 @@ const HeroInfo = () => {
       <Button onClick={toggleDetails}>Apresentação completa</Button>
 
       {showDetails && (
-        <Modal title="Cover Letter" closeModal={toggleDetails} isDetails>
+        <Modal title="Apresentação" closeModal={toggleDetails} isDetails>
           <div className="flex-1 flex p-4 items-center justify-center">
             <p>
-              Olá, me chamo <b>Edson Marcelo</b>, sou desenvolvedor frontend com
-              foco em <b>react</b> e <b>next.js</b>.
-              <br />
-              <br /> Tenho aproximadamente{' '}
               <b>
-                três anos de experiência profissional utilizando react e next.js
+                Olá, meu nome é Edson Marcelo, sou desenvolvedor frontend
+                especializado em React e Next.js.
               </b>
-              , trabalhando em ambiente ágil, com foco em resultado, sempre
-              utilizando GIT para versionamento do código com git flow
-              (features, hotfix, dev, main, homolog, release candidate, release,
-              etc..) e fazendo integração com api&apos;s e deploy na AWS.
               <br />
-              <br /> Além disso, já <b>estudo o ecossistema frontend</b>, mais
-              precisamente react/next, <b>há quase 5 anos</b>, estando a par dos
-              novos paradigmas com server componentes, actions, etc..
               <br />
-              <br /> Meus conhecimentos no <b>backend</b> não são tão profundos
-              quanto no front, mas já implementei backends usando{' '}
-              <b>next e prisma</b>, <b>node com express</b>, utilizando bancos
-              de dados SQL e NO SQL. <br />
-              <br /> Também tenho conhecimentos em <b>react-native</b>, caso
-              haja a oportunidade, tenho interesse em me aprofundar. <br />
-              <br /> Saindo da stack: Tenho experiência trabalhando com{' '}
-              <b>Salesforce marketing cloud</b>, desenvolvendo e-mails dinâmicos
-              e interativos consistentes cross-providers e cloud pages dentro da
-              plataforma.
+              Tenho cerca de <b>três anos de experiência profissional</b>,
+              atuando em <b>ambientes ágeis</b> e colaborativos, sempre com foco
+              na <b>entrega de valor e resultados concretos</b>. Domino o
+              ecossistema React/Next — incluindo conceitos modernos como{' '}
+              <b>server components</b> e <b>actions</b> — e sigo as melhores
+              práticas de versionamento com <b>Git e Git Flow</b>, integração
+              com <b>APIs REST</b>, <b>Websockets</b> e{' '}
+              <b>deploys em ambientes como AWS / VPS Hostinger</b>.<br />
+              <br />
+              Durante minha trajetória, tive a oportunidade de atuar também com{' '}
+              <b>Salesforce Marketing Cloud</b>, desenvolvendo{' '}
+              <b>e-mails marketing dinâmicos e interativos (AMPscript)</b> e{' '}
+              <b>landing pages responsivas</b>, com forte atenção à{' '}
+              <b>
+                acessibilidade, responsividade e compatibilidade cross-client
+              </b>
+              . Essa vivência fortaleceu minha capacidade de{' '}
+              <b>adaptação a diferentes contextos e tecnologias</b>, sempre com
+              foco em <b>excelência na entrega</b>.<br />
+              <br />
+              No backend, já implementei soluções com{' '}
+              <b>Next.js, Prisma, Node e Express</b>, utilizando bancos{' '}
+              <b>SQL e NoSQL</b>. Embora minha especialidade esteja no frontend,
+              mantenho uma visão integrada entre as camadas do sistema, o que
+              contribui para{' '}
+              <b>uma comunicação fluida com times fullstack e backend</b>.<br />
+              <br />
+              Além disso, tenho interesse em <b>React Native</b> e estou aberto
+              a oportunidades que ampliem minha atuação nessa área.
+              <br />
+              <br />
+              Estou à disposição para contribuir com meu{' '}
+              <b>comprometimento, proatividade e capacidade de adaptação</b>,
+              sempre buscando evoluir junto com o time e os desafios propostos.
+              <br />
+              <br />
+              <b>Atenciosamente,</b>
+              <br />
+              <b>Edson Marcelo</b>
             </p>
           </div>
         </Modal>
