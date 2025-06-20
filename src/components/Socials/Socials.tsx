@@ -32,17 +32,6 @@ const Socials = ({ className }: HTMLAttributes<HTMLDivElement>) => {
       >
         <AnimatedSpan>{Github_SVG}</AnimatedSpan>
       </a>
-
-      <a
-        href="https://api.whatsapp.com/send/?phone=%2B5537999853557"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-sky-500 transition-colors duration-300"
-        title="me envie uma mensagem no whatsapp"
-        aria-label="me envie uma mensagem no whatsapp"
-      >
-        <AnimatedSpan>{Whats_SVG}</AnimatedSpan>
-      </a>
       <a
         href={'/edson_marcelo.pdf'}
         download="edson_marcelo_curriculum.pdf"
